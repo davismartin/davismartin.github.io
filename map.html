@@ -1,0 +1,139 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>Simple click event</title>
+    <meta name="viewport" content="initial-scale=1.0, user-scalable=no">
+    <meta charset="utf-8">
+    <link href='http://fonts.googleapis.com/css?family=Lato:300' rel='stylesheet' type='text/css'>
+    <script src="http://code.jquery.com/jquery-1.11.0.min.js"></script>
+    <script src="http://code.jquery.com/jquery-migrate-1.2.1.min.js"></script>
+
+    <style type="text/css">
+      li {
+        color: #3498db; 
+        font-family: Helvetica;
+        font-weight: bolder;
+        list-style-type: none;
+        position: relative;
+      }
+    </style>
+    <style>
+      html, body, #map-canvas {
+        height: 100%;
+        margin: 0px;
+        padding: 0px
+      }
+    </style>
+    <script src="https://maps.googleapis.com/maps/api/js?v=3.exp&sensor=false"></script>
+    <script>
+function initialize() {
+  var mapOptions = {
+    zoom: 14,
+    center: new google.maps.LatLng(30.395164, -97.735780)
+  };
+
+  var myLatlng = new google.maps.LatLng(30.4018454,-97.7391387);
+  var myLatlng2 = new google.maps.LatLng(30.3952078,-97.7499343);
+
+  
+
+  var map = new google.maps.Map(document.getElementById('map-canvas'),
+      mapOptions);
+
+  var populationOptions = {
+      strokeColor: '#2980b9',
+      strokeOpacity: 0.8,
+      strokeWeight: 2,
+      fillColor: '#3498db',
+      fillOpacity: 0.35,
+      map: map,
+      center: new google.maps.LatLng(30.396682, -97.738569),
+      radius: 1500
+  };
+
+  var user1_string = "<img src='http://home.europa.com/~bence/pre/images/StevePrefontaine.gif' alt='Smiley face' width='48' height='48'>" +
+          "<li>Name: Prefontaine</li>" +
+          "<li>Age: 24</li>" +
+          "<li>Pace: 5:00</li>"+
+          "<li><img src='http://michelawalters.files.wordpress.com/2012/07/2-out-of-5-stars.jpg' alt='smiley face' width='100' height='40'</li>"
+  var user2_string = "<img src='https://fbcdn-profile-a.akamaihd.net/hprofile-ak-prn2/t1/p148x148/1396021_10103948233131034_776767808_n.jpg' alt='Smiley face' width='48' height='48'>" +
+          "<li>Name: Davis Martin</li>" +
+          "<li>Age: 26</li>" +
+          "<li>Pace: 8:00</li>" +
+          "<li><img src='http://bibliocircus.files.wordpress.com/2012/01/three-stars_0.png' alt='smiley face' width='100' height='40'</li>"
+  var user3_string = "<img src='https://avatars.githubusercontent.com/u/4714513' alt='Smiley face' width='48' height='48'>" +
+          "<li>Name: Christian Monsegue</li>" +
+          "<li>Age: 24</li>" +
+          "<li>Pace: 7:00</li>" +
+          "<li><img src='http://3.bp.blogspot.com/-vvxHwaa4gAU/Uei73xCai8I/AAAAAAAAAs8/nWX5YpPQ7M0/s1600/five-stars.png' alt='smiley face' width='100' height='40'</li>"
+
+  cityCircle = new google.maps.Circle(populationOptions);
+  var greenIcon ='http://maps.google.com/mapfiles/ms/icons/green-dot.png'; 
+ 
+google.maps.event.addListener(map, 'click', function(event) {
+ 
+  var marker1 = new google.maps.Marker({
+    position: map.getCenter(),
+    map: map,
+    title: 'Click to zoom'
+  });
+  var marker2 = new google.maps.Marker({
+    position: myLatlng,
+    map: map,
+    title: 'Click to zoom',
+    icon: greenIcon
+  });
+  var marker3 = new google.maps.Marker({
+    position: myLatlng2,
+    map: map,
+    title: 'Click to zoom',
+    icon: greenIcon
+  });
+  google.maps.event.addListener(marker1, 'click', function() {
+    infowindow1.open(map, marker1);
+  });
+  google.maps.event.addListener(marker2, 'click', function() {
+    infowindow2.open(map, marker2);
+  });
+  google.maps.event.addListener(marker3, 'click', function() {
+    infowindow3.open(map, marker3);
+  });
+
+});
+
+  google.maps.event.addListener(map, 'center_changed', function() {
+    // 3 seconds after the center of the map has changed, pan back to the
+    // marker.
+    window.setTimeout(function() {
+      map.panTo(marker.getPosition());
+    }, 5000);
+  });
+
+  var infowindow1 = new google.maps.InfoWindow({
+  content: user1_string
+          
+  });
+  var infowindow2 = new google.maps.InfoWindow({
+  content: user2_string
+          
+  });
+  var infowindow3 = new google.maps.InfoWindow({
+  content: user3_string
+          
+  });
+
+
+  
+}
+
+google.maps.event.addDomListener(window, 'load', initialize);
+
+    </script>
+  </head>
+  <body>
+    <div id="map-canvas"></div>
+    <div class='overlay'>
+      <button type="submit">Find Me Runners</button>
+    </div>
+  </body>
+</html>
