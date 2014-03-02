@@ -5,8 +5,7 @@
     <meta name="viewport" content="initial-scale=1.0, user-scalable=no">
     <meta charset="utf-8">
     <link href='http://fonts.googleapis.com/css?family=Lato:300' rel='stylesheet' type='text/css'>
-    <script src="http://code.jquery.com/jquery-1.11.0.min.js"></script>
-    <script src="http://code.jquery.com/jquery-migrate-1.2.1.min.js"></script>
+   
 
     <style type="text/css">
       li {
@@ -69,6 +68,23 @@ function initialize() {
 
   cityCircle = new google.maps.Circle(populationOptions);
   var greenIcon ='http://maps.google.com/mapfiles/ms/icons/green-dot.png'; 
+  var controlDiv = document.createElement('div');
+  controlDiv.style.padding = '5px';
+  var controlUI = document.createElement('div');
+  controlUI.style.backgroundColor = 'white';
+  controlUI.style.borderStyle = 'solid';
+  controlUI.style.borderWidth = '2px';
+  controlUI.style.cursor = 'pointer';
+  controlUI.style.textAlign = 'center';
+  controlUI.title = 'Click to set the map to Home';
+  controlDiv.appendChild(controlUI);
+  var controlText = document.createElement('div');
+  controlText.style.fontFamily = 'Arial,sans-serif';
+  controlText.style.fontSize = '12px';
+  controlText.style.paddingLeft = '4px';
+  controlText.style.paddingRight = '4px';
+  controlText.innerHTML = '<strong>Home</strong>';
+  controlUI.appendChild(controlText);
  
 google.maps.event.addListener(map, 'click', function(event) {
  
