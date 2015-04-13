@@ -28,7 +28,6 @@ $on-palm:          600px;
 $on-laptop:        800px;
 
 
-
 // Using media queries with like this:
 // @include media-query($on-palm) {
 //     .wrapper {
@@ -51,30 +50,59 @@ $on-laptop:        800px;
         "syntax-highlighting"
 ;
 
-.hero {
-  width: 100%;
-  height: 320px;
-  background-size: cover;
-}
-
 .hero-main {
-  background-image: url('../images/Yosemite_National_Park_waterfall_forest_mountains_2560x1600.jpg');
-  /*background-color: rgba(120, 14, 8, 1);*/
-  height: 320px;
+  background-image: url('http://www.gravatar.com/avatar/1ea4ba65136ff07d67aca06125e0fc34?s=1000.png');
+  background-attachment: fixed !important;
+  height: 400px;
   background-size: 100%, 100%;
-  background-position: 0% 48%;
-  background-repeat: no-repeat
+  background-position: 0% 0%;
+  background-repeat: no-repeat;
+  margin-top: 20px;
 }
 
-.img-circle {
-  margin-top: 50px;
+.about-title {
+  text-align: center;
+  padding-bottom: 10px;
 }
 
-.index-title {
+.about-me-list {
+  list-style: none;
+  text-align: center;
+  margin-left: 0px;
+}
+
+.cause-list {
+  list-style: none;
+}
+
+.description a:hover {
+  color: white;
+}
+
+.tech-title {
+  text-align: center;
+  margin-top: 0px;
+}
+
+.about-summary {
+  text-align: center;
+  padding-bottom: 20px;
+}
+
+.about-tech {
+  text-align: center;
+}
+
+.about-cause {
+  text-align: center;
+}
+
+.description {
+  background: palegreen;
   font-family: 'Lato', sans-serif;
   font-style: italic;
   font-weight: bold;
   color: white;
-  text-align: center;
-  padding-top: 100px;
+  padding-bottom: 20px;
+  font-size: 18px;
 }
