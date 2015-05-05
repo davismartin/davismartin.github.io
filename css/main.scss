@@ -50,59 +50,141 @@ $on-laptop:        800px;
         "syntax-highlighting"
 ;
 
+nav{opacity: .8;}
+ul.nav.navbar-nav {
+  width: 100%;
+  text-align: center;
+}
+ul.nav.navbar-nav>li {
+  float: none;
+  display: inline-block;
+  width: 24%;
+  opacity: 1;
+  font-family: Helvetica, sans-serif;
+  font-weight: bold;
+  font-size: 14px;
+  -webkit-font-smoothing: antialiased;
+}
+
+
 .hero-main {
   background-image: url('http://www.gravatar.com/avatar/1ea4ba65136ff07d67aca06125e0fc34?s=1000.png');
   background-attachment: fixed !important;
-  height: 400px;
+  height: 500px;
   background-size: 100%, 100%;
   background-position: 0% 0%;
   background-repeat: no-repeat;
-  margin-top: 20px;
 }
 
 .about-title {
   text-align: center;
   padding-bottom: 10px;
-}
-
-.about-me-list {
-  list-style: none;
-  text-align: center;
-  margin-left: 0px;
-}
-
-.cause-list {
-  list-style: none;
-}
-
-.description a:hover {
   color: white;
 }
 
-.tech-title {
-  text-align: center;
-  margin-top: 0px;
+.about-description {
+  background: black;
+  font-family: 'Lato', sans-serif;
+  font-style: italic;
+  font-weight: bold;
+  padding-bottom: 20px;
+  font-size: 18px;
+}
+.about-description a:hover {
+  color: white;
 }
 
 .about-summary {
   text-align: center;
   padding-bottom: 20px;
+  color: white;
 }
 
-.about-tech {
+.tech {
+  font-family: 'Lato', sans-serif;
+  background-color: whitesmoke;
+  font-style: italic;
+  font-weight: bold;
+  padding-bottom: 20px;
+  font-size: 18px;
+}
+
+.tech-title {
   text-align: center;
+  padding-bottom: 20px;
+  color: black;
+  font-size: 24px;
 }
 
-.about-cause {
-  text-align: center;
-}
-
-.description {
-  background: palegreen;
+.work {
   font-family: 'Lato', sans-serif;
   font-style: italic;
   font-weight: bold;
-  color: white;
   padding-bottom: 20px;
   font-size: 18px;
+  background-color: black;
+}
+
+.work-title {
+  text-align: center;
+  padding-bottom: 20px;
+  color: white;
+  font-size: 24px;
+}
+
+
+
+
+
+.img {
+    position: relative;
+    width:  50%;
+    height: 200px;
+    background-position: 75% 75%;
+    background-repeat:   no-repeat;
+    background-size:     contain;
+}
+
+div.angular {
+  background-image:url('/images/angularjs.png');
+  float: none;
+}
+
+div.node {
+  background-image:url('/images/node.png');
+  float: none;
+}
+
+div.react {
+  background-image:url('/images/react.png');
+  float: none;
+}
+
+div.rails {
+  background-image:url('/images/rails.png');
+  float: none;
+}
+
+div.gulp {
+  background-image:url('/images/gulp.png');
+  float: none;
+}
+
+div.golang {
+  background-image:url('/images/golang.png');
+  float: none;
+}
+
+div.rackspace {
+  background-image:url('/images/rackspace-logo.png');
+  float: none;
+}
+
+div.mmm {
+  background-image:url('/images/mmm.gif');
+  float: none;
+}
+div.thfc {
+  background-image:url('/images/tfhc.png');
+  float: none;
 }
