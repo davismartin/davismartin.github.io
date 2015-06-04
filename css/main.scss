@@ -26,6 +26,7 @@ $content-width:    800px;
 
 $on-palm:          600px;
 $on-laptop:        800px;
+$iphone:           500px;
 
 
 @mixin media-query($device) {
@@ -43,6 +44,11 @@ $on-laptop:        800px;
         "syntax-highlighting"
 ;
 
+@media screen and (max-width: $iphone) {
+  .page-content {
+    margin-right: -15px;
+  }
+}
 body {
   position: relative;
 }
