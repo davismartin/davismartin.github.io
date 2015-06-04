@@ -71,7 +71,12 @@ $("nav li a[href^='#']").on('click', function(e) {
 
 });
 
-$('.resumeIframe').css('width', $(window).width()+'px');
+$(document).ready(function() {
+  $('.resumeIframe').css('width', $(window).width()+'px');
+  $(window).on('resize', function() {
+    $('.resumeIframe').css('width', $(window).width()+'px');
+  });
+});
 
 
 </script>
