@@ -76,6 +76,10 @@ $(document).ready(function() {
   $(window).on('resize', function() {
     $('.resumeIframe').css('width', $(window).width()+'px');
   });
+  $('.resumeIframe').on('load', function() {
+    $(window).width() - 20 +'px';
+    console.log("fire");
+  })
 });
 
 
