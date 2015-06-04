@@ -77,4 +77,87 @@ $on-laptop:        800px;
   color: white;
   text-align: center;
   padding-top: 100px;
+  padding-bottom: 20px;
+  color: white;
+  font-size: 24px;
+}
+
+.img {
+    position: relative;
+    width:  50%;
+    height: 200px;
+    background-position: 75% 75%;
+    background-repeat:   no-repeat;
+    background-size:     contain;
+}
+
+div.angular {
+  background-image:url('/images/angularjs.png');
+  float: none;
+}
+
+div.node {
+  background-image:url('/images/node.png');
+  float: none;
+}
+
+div.react {
+  background-image:url('/images/react.png');
+  float: none;
+}
+
+div.rails {
+  background-image:url('/images/rails.png');
+  float: none;
+}
+
+div.gulp {
+  background-image:url('/images/gulp.png');
+  float: none;
+}
+
+div.golang {
+  background-image:url('/images/golang.png');
+  float: none;
+}
+
+div.rackspace {
+  background-image:url('/images/rackspace-logo.png');
+  float: none;
+}
+
+div.mmm {
+  background-image:url('/images/mmm.gif');
+  float: none;
+}
+div.thfc {
+  background-image:url('/images/tfhc.png');
+  float: none;
+}
+
+.job-description {
+  font-size: 15px;
+}
+
+.footer {
+  font-family: 'Lato', sans-serif;
+  font-style: italic;
+  font-weight: bold;
+  padding-bottom: 20px;
+  font-size: 18px;
+  background-color: black;
+}
+
+.footer-title {
+  font-family: 'Lato', sans-serif;
+}
+
+.video-container {
+  position: relative;
+  overflow: scroll;
+}
+
+.video-container iframe {
+  width: 100%;
+  height: 300px;
 }
