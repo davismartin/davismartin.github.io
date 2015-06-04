@@ -50,6 +50,9 @@ $on-laptop:        800px;
         "syntax-highlighting"
 ;
 
+body {
+  position: relative;
+}
 nav{opacity: .8;}
 ul.nav.navbar-nav {
   width: 100%;
@@ -58,12 +61,16 @@ ul.nav.navbar-nav {
 ul.nav.navbar-nav>li {
   float: none;
   display: inline-block;
-  width: 24%;
+  width: 19%;
   opacity: 1;
   font-family: Helvetica, sans-serif;
   font-weight: bold;
   font-size: 14px;
   -webkit-font-smoothing: antialiased;
+}
+
+li.active a{
+  background-color: #500000 !important;
 }
 
 
@@ -132,9 +139,37 @@ ul.nav.navbar-nav>li {
   font-size: 24px;
 }
 
+.resume {
+  font-family: 'Lato', sans-serif;
+  background-color: whitesmoke;
+  font-style: italic;
+  font-weight: bold;
+  padding-bottom: 20px;
+  font-size: 18px;
+}
 
+.resume-title {
+  text-align: center;
+  padding-bottom: 20px;
+  color: black;
+  font-size: 24px;
+}
 
+.footer {
+  font-family: 'Lato', sans-serif;
+  font-style: italic;
+  font-weight: bold;
+  padding-bottom: 20px;
+  font-size: 18px;
+  background-color: black;
+}
 
+.footer-title {
+  text-align: center;
+  padding-bottom: 20px;
+  color: white;
+  font-size: 24px;
+}
 
 .img {
     position: relative;
@@ -191,4 +226,17 @@ div.thfc {
 
 .job-description {
   font-size: 15px;
+}
+
+.footer {
+  font-family: 'Lato', sans-serif;
+  font-style: italic;
+  font-weight: bold;
+  padding-bottom: 20px;
+  font-size: 18px;
+  background-color: black;
+}
+
+.footer-title {
+  font-family: 'Lato', sans-serif;
 }

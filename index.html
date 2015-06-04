@@ -1,12 +1,14 @@
 ---
 layout: default
 ---
-<div class="row">
+<div class="row" id="home">
   <div class="hero hero-main"></div>
 </div>
-<div class="row about-description">
+<div class="row about-description" id="about">
   <div class="col-xs-12">
-    <h3 class="about-title">Howdy I'm Davis Martin</h3>
+    <h3 class="about-title">
+      Howdy I'm Davis Martin
+    </h3>
     <div class="col-xs-8 col-xs-offset-2 about-summary">
       I graduated from Texas A&amp;M with a degree in Electrical Engineering and minors in business and math.
       I am a front-end web developer at Rackspace Hosting, a food blogger
@@ -15,7 +17,7 @@ layout: default
     </div>
   </div>
 </div>
-<div class="row tech">
+<div class="row tech" id="tech">
   <div class="col-xs-12">
     <h2 class="tech-title">Tech I Like to Use / Play With:</h2>
   </div>
@@ -50,7 +52,7 @@ layout: default
     </a>
   </div>
 </div>
-<div class="row work">
+<div class="row work" id="work">
   <div class="col-xs-12 work-title">
     <h2 class="work-title">Work</h2>
   </div>
@@ -122,24 +124,45 @@ layout: default
     </div>
   </div>
 </div>
-<div class="row">
+<!-- <div class="row">
   <div class="col-xs-12">
     <h2>Blog</h2>
   </div>
-</div>
-<div class="row">
+</div> -->
+<div class="row resume" id="resume">
   <div class="col-xs-12">
-    <h2>Resume</h2>
+    <h2 class="resume-title">Resume</h2>
   </div>
-</div>
-<div class="row">
   <div class="col-xs-12">
+    <iframe src="https://docs.google.com/document/d/1jdLrD9FJ6ke5QtI2I8JoYQnNNDtiDTmrhaipVNt2CIg/pub?embedded=true"
+            height="400px"
+            width="100%">
+    </iframe>
   </div>
 </div>
-<div class="row">
-  <div class="col-xs-6">
-    <h3>Tech I am interested in</h3>
-  </div>
+
+<script>
+$("nav li a[href^='#']").on('click', function(e) {
+
+   // prevent default anchor click behavior
+   e.preventDefault();
+
+   // store hash
+   var hash = this.hash;
+
+   // animate
+   $('html, body').animate({
+       scrollTop: $(hash).offset().top
+     }, 300, function(){
+
+       // when done, add hash to url
+       // (default click behaviour)
+       window.location.hash = hash;
+     });
+
+});
+</script>
+<!-- <div class="row">
   <div class="col-xs-6">
     <ul class="post-list">
       {% for post in site.posts %}
@@ -154,11 +177,11 @@ layout: default
     </ul>
     <p class="rss-subscribe">subscribe <a href="{{ "/feed.xml" | prepend: site.baseurl }}">via RSS</a></p>
   </div>
-</div>
-<div class="home">
+</div> -->
+<!-- <div class="home">
 <div class="col-md-4">
 
 </div>
 
 
-</div>
+</div> -->
