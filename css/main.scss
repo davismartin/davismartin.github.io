@@ -35,8 +35,6 @@ $iphone:           500px;
     }
 }
 
-
-
 // Import partials from `sass_dir` (defaults to `_sass`)
 @import
         "base",
@@ -49,6 +47,7 @@ $iphone:           500px;
     margin-right: -15px;
   }
 }
+
 body {
   position: relative;
 }
@@ -72,14 +71,20 @@ li.active a{
   background-color: #500000 !important;
 }
 
-
 .hero-main {
-  background-image: url('http://www.gravatar.com/avatar/1ea4ba65136ff07d67aca06125e0fc34?s=1000.png');
+  height: 600px;
+  // background-image: url('http://www.gravatar.com/avatar/1ea4ba65136ff07d67aca06125e0fc34?s=1000.png');
+  background-image: url('/images/meeeee.JPG');
   background-attachment: fixed !important;
-  height: 500px;
   background-size: 100%, 100%;
   background-position: 0% 0%;
   background-repeat: no-repeat;
+}
+
+@media (max-width: 800px) {
+  .hero-main {
+    max-height: 300px;
+  }
 }
 
 .about-title {
