@@ -1,0 +1,89 @@
+---
+layout: default
+---
+
+<div class="row container-fluid">
+  {% include home-hero.html %}
+</div>
+<div class="row work" id="work">
+    {% include home-work.html %}
+</div>
+
+<div class="row tech" id="tech">
+  <div class="col-xs-12">
+    <h2 class="tech-title">Tech I Like to Use / Play With:</h2>
+  </div>
+  <div class="col-md-4 col-xs-6 tools">
+    <a href="https://angularjs.org/">
+      <div class="col-xs-10 img angular"></div>
+    </a>
+  </div>
+  <div class="col-md-4 col-xs-6 tools">
+    <a href="https://nodejs.org/">
+      <div class="col-xs-10 img node"></div>
+    </a>
+  </div>
+  <div class="col-md-4 col-xs-6 tools">
+    <a href="https://facebook.github.io/react/">
+      <div class="col-xs-10 img react"></div>
+    </a>
+  </div>
+  <div class="col-md-4 col-xs-6 tools">
+    <a href="http://rubyonrails.org/">
+      <div class="col-xs-10 img rails"></div>
+    </a>
+  </div>
+  <div class="col-md-4 col-xs-6 tools">
+    <a href="http://gulpjs.com/">
+      <div class="col-xs-10 img gulp"></div>
+    </a>
+  </div>
+  <div class="col-md-4 col-xs-6 tools">
+    <a href="https://golang.org/">
+      <div class="col-xs-10 img golang"></div>
+    </a>
+  </div>
+</div>
+
+<!-- <div class="row">
+  <div class="col-xs-12">
+    <h2>Blog</h2>
+  </div>
+</div> -->
+<div class="row resume" id="resume">
+  <div class="col-xs-12">
+    <h2 class="resume-title">Resume</h2>
+  </div>
+  <div class="col-xs-12">
+    <a href="https://docs.google.com/document/d/1jdLrD9FJ6ke5QtI2I8JoYQnNNDtiDTmrhaipVNt2CIg/pub" target="#">
+      Click Here to see resume in separate tab.
+    <a/>
+    <div class="resume-container">
+        <iframe src="https://docs.google.com/document/d/1jdLrD9FJ6ke5QtI2I8JoYQnNNDtiDTmrhaipVNt2CIg/pub?embedded=true">
+        </iframe>
+    </div>
+  </div>
+</div>
+<!-- <div class="row">
+  <div class="col-xs-6">
+    <ul class="post-list">
+      {% for post in site.posts %}
+        <li>
+          <span class="post-meta">{{ post.date | date: "%b %-d, %Y" }}</span>
+
+          <h2>
+            <a class="post-link" href="{{ post.url | prepend: site.baseurl }}">{{ post.title }}</a>
+          </h2>
+        </li>
+      {% endfor %}
+    </ul>
+    <p class="rss-subscribe">subscribe <a href="{{ "/feed.xml" | prepend: site.baseurl }}">via RSS</a></p>
+  </div>
+</div> -->
+<!-- <div class="home">
+<div class="col-md-4">
+
+</div>
+
+
+</div> -->

@@ -1,0 +1,23 @@
+.navbar {
+  & ul {
+    width: 100%;
+    text-align: center;
+    background-color: transparent;
+    border: none;
+  }
+  & li {
+    float: none;
+    display: inline-block;
+    width: 19%;
+    -webkit-font-smoothing: antialiased;
+    & a{
+      color: $text-color;
+      font-size: 2rem;
+      &:hover {
+        color: black;
+        opacity: .5;
+      }
+    }
+  }
+}
+//TODO: need media queries
