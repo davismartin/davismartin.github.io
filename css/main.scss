@@ -43,7 +43,9 @@ $iphone:           500px;
         "syntax-highlighting",
         "nav",
         "hero",
-        "work"
+        "work",
+        "resume",
+        "footer"
 ;
 
 @media screen and (max-width: $iphone) {
@@ -52,67 +54,13 @@ $iphone:           500px;
   }
 }
 
-.tech {
-  background-color: whitesmoke;
-  font-style: italic;
-  font-weight: bold;
+.row {
   padding-bottom: 20px;
-  font-size: 18px;
+  border-bottom: 1px solid #555;
 }
 
-.tech-title {
+.row-title {
   text-align: center;
-  padding-bottom: 20px;
-  color: black;
-  font-size: 24px;
-}
-
-
-
-.resume {
-  // font-family: 'Lato', sans-serif;
-  background-color: whitesmoke;
-  font-style: italic;
-  font-weight: bold;
-  padding-bottom: 20px;
-  font-size: 18px;
-}
-
-.resume-title {
-  text-align: center;
-  padding-bottom: 20px;
-  color: black;
-  font-size: 24px;
-}
-
-.footer {
-  // font-family: 'Lato', sans-serif;
-  font-style: italic;
-  font-weight: bold;
-  padding-bottom: 20px;
-  font-size: 18px;
-  background-color: black;
-}
-
-.footer-title {
-  text-align: center;
-  padding-bottom: 20px;
-  color: white;
-  font-size: 24px;
-}
-
-.job-description {
-  font-size: 15px;
-}
-
-.resume-container {
-  overflow: scroll;
-  -webkit-overflow-scrolling:touch;
-}
-
-.resume-container iframe {
-  width: 100%;
-  height: 300px;
-  overflow: scroll;
-  -webkit-overflow-scrolling:touch;
+  padding: 1% 0 0 0;
+  font-size: 4rem;
 }

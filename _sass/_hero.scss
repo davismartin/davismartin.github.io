@@ -1,3 +1,7 @@
+.hero {
+  padding-bottom: 1%;
+}
+
 .hero-image {
   padding: 0 0 1% 0;
 }
@@ -9,7 +13,6 @@
 }
 
 .about-description {
-  color: $text-color;
   font-weight: bold;
   padding-bottom: 20px;
   font-size: 2rem;
@@ -22,3 +25,17 @@
 }
 
 //TODO: need media queries
+@media screen and (max-width: $iphone) {
+  .about-title {
+    font-size: 4em * .75;
+  }
+
+  .about-description {
+    font-size: 2rem * .75;
+  }
+
+  .about-summary {
+    font-size: 2.5rem * .75;
+  }
+
+}

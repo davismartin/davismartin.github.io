@@ -1,0 +1,11 @@
+.resume-container {
+  overflow: scroll;
+  -webkit-overflow-scrolling:touch;
+}
+
+.resume-container iframe {
+  width: 100%;
+  height: 300px;
+  overflow: scroll;
+  -webkit-overflow-scrolling:touch;
+}

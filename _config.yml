@@ -10,6 +10,8 @@ url: "http://davissmartin.com" # the base hostname & protocol for your site
 twitter_username: "davis_martin_"
 github_username: "davismartin"
 facebook_username: "davis.martin"
+linkedin_username: "davismartindev"
+googleplus_username: "113904257175185224261"
 
 # Build settings
 markdown: kramdown

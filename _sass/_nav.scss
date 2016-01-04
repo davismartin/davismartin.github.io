@@ -2,7 +2,6 @@
   & ul {
     width: 100%;
     text-align: center;
-    background-color: transparent;
     border: none;
   }
   & li {
@@ -11,13 +10,25 @@
     width: 19%;
     -webkit-font-smoothing: antialiased;
     & a{
-      color: $text-color;
+      color: #fff;
       font-size: 2rem;
       &:hover {
-        color: black;
         opacity: .5;
       }
     }
   }
 }
-//TODO: need media queries
+
+#navbar-main ul>li>a {
+  color: #fff;
+  &:hover {
+    color: #fff;
+  }
+}
+
+@media screen and (max-width: $iphone) {
+  .navbar ul>li {
+    display: block;
+    width: 100%;
+  }
+}

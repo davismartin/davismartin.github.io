@@ -1,15 +1,3 @@
-.work {
-  padding-bottom: 20px;
-  background-color: black;
-}
-
-.work-title {
-  text-align: center;
-  padding-bottom: 20px;
-  color: white;
-  font-size: 24px;
-}
-
 .thumb-image {
   margin-bottom: 3%;
 }
@@ -18,32 +6,14 @@
   height: 250px;
 }
 
-div.angular {
-  background-image:url('/images/angularjs.png');
-  float: none;
+.job-description {
+  font-size: 18px;
 }
 
-div.node {
-  background-image:url('/images/node.png');
-  float: none;
+.thumbnail {
+  transition: box-shadow .2s ease-in-out;
 }
 
-div.react {
-  background-image:url('/images/react.png');
-  float: none;
-}
-
-div.rails {
-  background-image:url('/images/rails.png');
-  float: none;
-}
-
-div.gulp {
-  background-image:url('/images/gulp.png');
-  float: none;
-}
-
-div.golang {
-  background-image:url('/images/golang.png');
-  float: none;
+.thumbnail:hover {
+  box-shadow: 10px 10px 5px #888888;
 }
