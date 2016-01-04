@@ -1,0 +1,41 @@
+.hero {
+  padding-bottom: 1%;
+}
+
+.hero-image {
+  padding: 0 0 1% 0;
+}
+
+.about-title {
+  color: $text-color;
+  font-weight: 300;
+  font-size: 4em;
+}
+
+.about-description {
+  font-weight: bold;
+  padding-bottom: 20px;
+  font-size: 2rem;
+}
+
+.about-summary {
+  color: $text-color;
+  text-align: center;
+  font-size: 2.5rem;
+}
+
+//TODO: need media queries
+@media screen and (max-width: $iphone) {
+  .about-title {
+    font-size: 4em * .75;
+  }
+
+  .about-description {
+    font-size: 2rem * .75;
+  }
+
+  .about-summary {
+    font-size: 2.5rem * .75;
+  }
+
+}

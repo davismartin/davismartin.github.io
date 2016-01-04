@@ -1,0 +1,34 @@
+.navbar {
+  & ul {
+    width: 100%;
+    text-align: center;
+    border: none;
+  }
+  & li {
+    float: none;
+    display: inline-block;
+    width: 19%;
+    -webkit-font-smoothing: antialiased;
+    & a{
+      color: #fff;
+      font-size: 2rem;
+      &:hover {
+        opacity: .5;
+      }
+    }
+  }
+}
+
+#navbar-main ul>li>a {
+  color: #fff;
+  &:hover {
+    color: #fff;
+  }
+}
+
+@media screen and (max-width: $iphone) {
+  .navbar ul>li {
+    display: block;
+    width: 100%;
+  }
+}

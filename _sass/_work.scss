@@ -1,0 +1,19 @@
+.thumb-image {
+  margin-bottom: 3%;
+}
+
+.thumbnail a>img {
+  height: 250px;
+}
+
+.job-description {
+  font-size: 18px;
+}
+
+.thumbnail {
+  transition: box-shadow .2s ease-in-out;
+}
+
+.thumbnail:hover {
+  box-shadow: 10px 10px 5px #888888;
+}
