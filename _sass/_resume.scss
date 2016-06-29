@@ -1,11 +1,18 @@
-.resume-container {
-  overflow: scroll;
-  -webkit-overflow-scrolling:touch;
+.resume h2 {
+  padding-bottom: 1%;
 }
 
-.resume-container iframe {
-  width: 100%;
-  height: 300px;
-  overflow: scroll;
-  -webkit-overflow-scrolling:touch;
+.btn-resume {
+  font-size: 1.75rem;
+  line-height: 1.05rem;
+  padding: 2.5rem 5rem;
+  transition: all 0.3s ease;
+  cursor: pointer;
+  border: 2px solid rgba(34,34,34,0.5);
+  background: transparent;
+  &:hover {
+    border: 2px solid rgba(34, 34, 34, 1);
+    background: #222;
+    color: #fff;
+  }
 }
