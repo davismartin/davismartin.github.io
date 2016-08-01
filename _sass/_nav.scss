@@ -1,4 +1,4 @@
-.navbar {
+.navbar.navbar-inverse{
   border-radius: 0;
   & ul {
     width: 100%;
@@ -10,20 +10,16 @@
     display: inline-block;
     width: 19%;
     -webkit-font-smoothing: antialiased;
-    & a{
-      color: #fff;
+    &:hover {
+      background-color: #fff;
+    }
+    & a {
+      color: $navbar-link-color;
       font-size: 2rem;
       &:hover {
-        opacity: .5;
+        color: #000000;
       }
     }
-  }
-}
-
-#navbar-main ul>li>a {
-  color: #fff;
-  &:hover {
-    color: #fff;
   }
 }
 

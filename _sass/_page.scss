@@ -1,0 +1,21 @@
+
+
+.page-header-image {
+  background-image: url('/images/bookshelf.jpg');
+  min-height: 400px;
+  width: 100%;
+  margin-top: -20px;
+}
+
+.page-header-title {
+  text-align: center;
+  color: #fff;
+  padding-top: 150px;
+  font-size: 8rem;
+  font-weight: bold;
+}
+
+.page-header-discription {
+  text-align: center;
+  font-size: $base-font-size * 1.25;
+}
