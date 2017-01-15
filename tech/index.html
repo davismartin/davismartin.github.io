@@ -1,43 +1,8 @@
 ---
 layout: page
-title: What I've Worked on
-imgUrl: /images/bookshelf.jpg
-description: These are the projects I have worked on both professionally and for fun.
+title: My Journey for Understanding
+imgUrl: '../images/tech.jpg'
 ---
 <section>
-  <div class="col-xs-12">
-    <div class="col-xs-12">
-      <h2> My Top 5 Books</h2>
-    </div>
-    {% for post in site.categories['work'] %}
-      <div class="col-md-4 col-xs-12">
-        <div class="thumbnail">
-          <div class="thumb-image">
-            <a href="http://www.rackspace.com/ {{url}}">
-              <img src="/images/rackspace-logo.png {{img}}" alt="rackspace{{post.title}}" height="250" class="center-block img-responsive">
-            </a>
-          </div>
-          <h2>Rackspace{{post.title}}</h2>
-          <p>
-            {{desciption}}
-          </p>
-        </div>
-      </div>
-    {% endfor %}
-  </div>
-  <div class="col-xs-12">
-    <div class="col-md-4 col-xs-12">
-      <div class="thumbnail">
-        <div class="thumb-image">
-          <a href="http://www.rackspace.com/ {{bookUrl}}">
-            <img src="/images/rackspace-logo.png {{bookImg}}" alt="rackspace{{bookTitle}}" height="250" class="center-block img-responsive">
-          </a>
-        </div>
-        <h2>Rackspace{{bookTitle}}</h2>
-        <p>
-          {{bookDescription}}
-        </p>
-      </div>
-    </div>
-  </div>
+  
 </section>
