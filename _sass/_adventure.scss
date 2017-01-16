@@ -1,0 +1,19 @@
+.adventure-image {
+  padding: 0 0 20px 0;
+  .adventure-title-image {
+    height: 450px;
+    text-align: center;
+  }
+}
+.adventure-image-row {
+  padding-bottom: 25px;
+}
+
+.adventure-peeps {
+  margin: 0;
+  list-style: none;
+  & > li {
+    display: inline-block;
+    padding-bottom: 20px;
+  }
+}

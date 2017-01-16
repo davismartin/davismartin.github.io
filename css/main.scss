@@ -13,14 +13,20 @@ $base-line-height: 1.5;
 
 $spacing-unit:     30px;
 
-$text-color:       #111;
-$background-color: #fdfdfd;
-$brand-color:      #2a7ae2;
+$text-color:         #111;
+$background-color:   #fdfdfd;
+$brand-color:        #2a7ae2;
 
-$grey-color:       #828282;
-$grey-color-light: lighten($grey-color, 40%);
-$grey-color-dark:  darken($grey-color, 25%);
-$text-color: #555;
+$grey-color:         #828282;
+$grey-color-light:   lighten($grey-color, 40%);
+$grey-color-dark:    darken($grey-color, 25%);
+$text-color:         #555;
+
+$navbar-link-color:  #fff;
+
+// Layout page vars
+
+
 
 // Width of the content area
 $content-width:    800px;
@@ -45,22 +51,14 @@ $iphone:           500px;
         "hero",
         "work",
         "resume",
-        "footer"
+        "footer",
+        "page",
+        "book-post",
+        "adventure"
 ;
 
 @media screen and (max-width: $iphone) {
   .page-content {
     margin-right: -15px;
   }
-}
-
-.row {
-  padding-bottom: 20px;
-  border-bottom: 1px solid #e3e3e3;
-}
-
-.row-title {
-  text-align: center;
-  padding: 1% 0 0 0;
-  font-size: 4rem;
 }

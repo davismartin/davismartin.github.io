@@ -1,19 +1,26 @@
 .thumb-image {
   margin-bottom: 3%;
+  padding-top: 10px;
 }
 
 .thumbnail a>img {
   height: 250px;
 }
 
-.job-description {
-  font-size: 18px;
-}
-
 .thumbnail {
+  background: #222;
+  color: #fff;
+  text-align: center;
   transition: box-shadow .2s ease-in-out;
 }
 
 .thumbnail:hover {
   box-shadow: 10px 10px 5px #888888;
+}
+
+.job-description {
+  font-size: 18px;
+  list-style: none;
+  margin: 0;
+  padding-bottom: 10px;
 }

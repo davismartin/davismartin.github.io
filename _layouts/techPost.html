@@ -1,0 +1,24 @@
+---
+layout: default
+---
+<div class="post">
+  <header class="post-header">
+    <div class="col-xs-12">
+      <div class="col-xs-12 book-image">
+        <a href="{{page.link}}">
+          <img src="{{page.image}}"
+               alt="{{page.title}}"
+               class="img-responsive book-title-image"/>
+        </a>
+      </div>
+      <div class="col-xs-12 book-info">
+        <h2 class="post-title">{{page.title}}</h2>
+        <h4>{{page.area}}</h4>
+        <p>{{page.date | date_to_string}}</p>
+      </div>
+    </div>
+  </header>
+  <article class="col-xs-8 col-xs-offset-2 post-content">
+    {{ content }}
+  </article>
+</div>

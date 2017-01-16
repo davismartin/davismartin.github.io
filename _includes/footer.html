@@ -31,42 +31,13 @@
           <i class="svg-icon email"></i>
         </a>
       {% endif %}
+      {% if site.resume %}
+        <a href="{{site.resume}}" target="new">
+          <i class="svg-icon resume"></i>
+        </a>
+      {% endif %}
     </div>
   </div>
 </div>
-
-<script>
-$(document).ready(function() {
-$("nav li a[href^='#']").on('click', function(e) {
-
-   // prevent default anchor click behavior
-   e.preventDefault();
-
-   // store hash
-   var hash = this.hash;
-
-   // animate
-   $('html, body').animate({
-       scrollTop: $(hash).offset().top
-     }, 300, function(){
-
-       // when done, add hash to url
-       // (default click behaviour)
-       window.location.hash = hash;
-     });
-
-});
-
-  //
-  // $('.resumeIframe').css('width', $(window).width()+'px');
-  // $(window).on('resize', function() {
-  //   $('.resumeIframe').css('width', $(window).width()+'px');
-  // });
-  // $('.resumeIframe').on('load', function() {
-  //   $(window).width() - 20 +'px';
-  //   console.log("fire");
-  // })
-});
-
-
-</script>
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.1/jquery.min.js"></script>
+<script src="/bootstrap/js/bootstrap.min.js"></script>

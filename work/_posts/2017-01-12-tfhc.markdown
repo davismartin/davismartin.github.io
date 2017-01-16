@@ -1,0 +1,8 @@
+---
+date:   2017-01-12
+image: '../images/tfhc.png'
+title: The Fairly Healthy Couple
+subTitle: Developer
+link: http://thefairlyhealthycouple.com/
+tech: [jQuery, Wordpress, Pixelmator, Photography]
+---

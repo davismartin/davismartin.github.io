@@ -1,0 +1,24 @@
+
+
+.page-header-image {
+  min-height: 400px;
+  width: 100%;
+  margin-top: -20px;
+  background-size:     cover;
+  background-repeat:   no-repeat;
+  background-position: center center;
+}
+
+
+.page-header-title {
+  text-align: center;
+  color: #fff;
+  font-size: $base-font-size * 1.25;
+  background-color: #222222;
+  padding: 10px 0 10px 0;
+  font-size: 8rem;
+  font-weight: bold;
+    & h1 {
+      margin-bottom: 0;
+    }
+}
