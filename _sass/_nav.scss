@@ -1,4 +1,4 @@
-.navbar.navbar-inverse{
+.navbar.navbar-inverse {
   border-radius: 0;
   & ul {
     width: 100%;
@@ -24,7 +24,7 @@
 }
 
 @media screen and (max-width: $iphone) {
-  .navbar ul>li {
+  .navbar.navbar-inverse ul>li {
     display: block;
     width: 100%;
   }
