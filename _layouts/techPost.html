@@ -13,11 +13,8 @@ layout: default
       </div>
       <div class="col-xs-12 book-info">
         <h2 class="post-title">{{page.title}}</h2>
-        <h4>By: {{page.author}}</h4>
-        <p>ISBN: {{page.ISBN}}</p>
-        <p>Read: {{page.date | date_to_string}}</p>
-        <p>Rating: {{page.rating}}/10</p>
-        <p><a href="{{page.link}}"><strong>Amazon Link</strong></a></p>
+        <h4>{{page.area}}</h4>
+        <p>{{page.date | date_to_string}}</p>
       </div>
     </div>
   </header>
