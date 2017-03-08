@@ -5,7 +5,7 @@ module.exports = {
   entry:'./react/js/ClientApp.js',
   devtool: 'eval',
   output: {
-    path: path.join(__dirname,'/public'),
+    path: path.join(__dirname,'/react/build'),
     filename: 'bundle.js'
   },
   resolve: {
