@@ -2,14 +2,14 @@ const path = require('path')
 
 module.exports = {
   context: __dirname,
-  entry:'./react/js/ClientApp.js',
+  entry: './react/js/ClientApp.js',
   devtool: 'eval',
   output: {
-    path: path.join(__dirname,'/react/build'),
+    path: path.join(__dirname, '/react/build'),
     filename: 'bundle.js'
   },
   resolve: {
-    extensions: ['.js','.json']
+    extensions: ['.js', '.json']
   },
   stats: {
     colors: true,
@@ -18,7 +18,8 @@ module.exports = {
   },
   module: {
     rules: [
-      { test: /\.js$/, loader: 'babel-loader', exclude: /node_modules/}
+      {test: /\.js$/, loader: 'babel-loader', exclude: /node_modules/},
+      {test: /\.css$/, use: ['style-loader', {loader: 'css-loader', options: {url: false}}]}
     ]
   }
 }
