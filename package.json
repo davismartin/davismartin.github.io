@@ -6,7 +6,8 @@
   "scripts": {
     "lint": "eslint react/js/**/*.js webpack.config.babel.js",
     "build": "webpack",
-    "test": "echo \"Error: no test specified\" && exit 1"
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "dev": "webpack-dev-server"
   },
   "dependencies": {
     "axios": "0.15.2",
