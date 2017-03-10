@@ -136,7 +136,6 @@ pre {
   display: block;
   float: right;
   width: 52%;
-  overflow-y: scroll;
 }
 
 .show-card > div > h3 {

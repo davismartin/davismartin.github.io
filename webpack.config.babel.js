@@ -1,16 +1,16 @@
 const path = require('path')
 
 module.exports = {
-  context: __dirname,
-  entry: './react/js/ClientApp.js',
+  context: path.join(__dirname, '/react/'),
+  entry: './js/ClientApp.js',
   devtool: 'eval',
   output: {
-    path: path.join(__dirname, '/react/build'),
+    path: path.join(__dirname, '/react/build/'),
     filename: 'bundle.js'
   },
   devServer:{
-    publicPath: './react/public',
-    contentBase: './react/',
+    publicPath:  path.join(__dirname, '/react/build/'),
+    contentBase: path.join(__dirname, '/react/'),
     historyApiFallback: true
   },
   resolve: {
