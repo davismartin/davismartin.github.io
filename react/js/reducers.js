@@ -26,4 +26,4 @@ const rootReducer = (state = DEFAULT_STATE, action) => {
   }
 }
 
-export {rootReducer}
+export default rootReducer
