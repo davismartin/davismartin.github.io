@@ -1,16 +1,8 @@
 exports[`test Search snapshot test 1`] = `
 <div
   className="search">
-  <header>
-    <h1>
-      svideo
-    </h1>
-    <input
-      onChange={[Function bound handleSearchTermChange]}
-      placeholder="Search"
-      type="text"
-      value="" />
-  </header>
+  <Connect(Header)
+    showSearch={true} />
   <div>
     <ShowCard
       description="A Congressman works with his equally conniving wife to exact revenge on the people who betrayed him."
@@ -48,7 +40,7 @@ exports[`test Search snapshot test 1`] = `
       trailer="ZBJHP2B4bjc"
       year="2015–" />
     <ShowCard
-      description="In a world replete with greed, betrayal, sexual intrigue and rivalry, Marco Polo is based on the famed explorer\'s adventures in Kublai Khan\'s court in 13th century China."
+      description="In a world replete with greed, betrayal, sexual intrigue and rivalry, Marco Polo is based on the famed explorer's adventures in Kublai Khan's court in 13th century China."
       imdbID="tt2189461"
       poster="mp.jpg"
       title="Marco Polo"
@@ -62,7 +54,7 @@ exports[`test Search snapshot test 1`] = `
       trailer="tRnS8FkcXNk"
       year="2015–" />
     <ShowCard
-      description="Meet the most beloved sitcom horse of the \'90s - 20 years later. BoJack Horseman was the star of the hit TV show Horsin\' Around, but today he\'s washed up, living in Hollywood, complaining about everything, and wearing colorful sweaters."
+      description="Meet the most beloved sitcom horse of the '90s - 20 years later. BoJack Horseman was the star of the hit TV show Horsin' Around, but today he's washed up, living in Hollywood, complaining about everything, and wearing colorful sweaters."
       imdbID="tt3398228"
       poster="bh.jpg"
       title="BoJack Horseman"
@@ -139,7 +131,7 @@ exports[`test Search snapshot test 1`] = `
       trailer="qxgbdYaR_KQ"
       year="2015–" />
     <ShowCard
-      description="A group of people around the world are suddenly linked mentally, and must find a way to survive being hunted by those who see them as a threat to the world\'s order."
+      description="A group of people around the world are suddenly linked mentally, and must find a way to survive being hunted by those who see them as a threat to the world's order."
       imdbID="tt2431438"
       poster="s8.jpg"
       title="Sense8"
