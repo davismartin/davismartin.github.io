@@ -18,13 +18,6 @@ layout: default
       </div>
     </div>
   </header>
-  {% for image in site.static_files %}
-    {% if image.path contains page.imageFolder %}
-    <div class="col-md-3 col-xs-12 adventure-image-row">
-      <img src="{{ image.path }}" height="300" alt="image" />
-    </div>
-    {% endif %}
-  {% endfor %}
   <article class="col-xs-8 col-xs-offset-2 post-content">
     {{ content }}
   </article>
