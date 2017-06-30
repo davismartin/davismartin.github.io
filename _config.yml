@@ -16,3 +16,4 @@ resume: "https://drive.google.com/file/d/0B9eaEYGl2BxwZ0Z6OVYwZURhZXM/view?usp=s
 
 # Build settings
 markdown: kramdown
+exclude: [node_modules]
